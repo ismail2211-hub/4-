@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <div class="h-screen flex justify-center items-center flex-col gap-15 bg-black ">
+        <div class="flex gap-2 items-center w-[331px] ">
+
+            <input type="number" class="input validator rounded-3xl" id="userInput" required placeholder="Enter your number "
+                title="Must be between be 1 to 10" />
+            <button class="btn btn-primary" id="sentBtn">sent</button>
+        </div>
+
+
+
+        <div class="flex justify-center items-center gap-15 bg-[#D9D9D980] w-[331px] h-[120px] rounded-[32px]">
+            <span class=" text-white text-6xl font-bold" id="decrementBtn">-</span>
+            <span class="text-6xl font-bold text-primary-content" id="count">0</span>
+            <span class="text-white text-6xl font-bold" id="incrementBtn">+</span>
+        </div>
+        <div>
+            <input type="color" id="colorBtn">
+            <button class="text-white text-4xl font-inter" id="sentColor"> Sent color</button>
+        </div>
+     
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
